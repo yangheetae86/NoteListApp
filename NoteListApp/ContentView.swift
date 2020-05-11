@@ -17,7 +17,8 @@ struct ContentView: View {
         NavigationView{
             List{
                 ForEach(notes, id: \.self){ note in
-                    NavigationLink(destination: NoteDetail(note: note)){
+                    NavigationLink(destination:
+                    NoteDetail(note: note)){
                         NoteRow(note: note)
                     }
                     
